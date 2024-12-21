@@ -1,32 +1,52 @@
 
-const userNumber = prompt('Ente ryour number 1 - 100, please');
+// const userNumber = prompt('Ente ryour number 1 - 100, please');
+// console.log(`User numaber ${userNumber}`);
+
+// if (userNumber === null) {
+//     alert('ok, bye');
+//     console.log('ok, bye');
+// }
+// else if (!userNumber.trim() || isNaN(userNumber) || !Number.isInteger(+userNumber)) {
+//     alert('Error: invalid number, try egain...!!!');
+//     console.log('Error: invalid number, try egain...!!!');
+// }
+// else if (0 < +userNumber && +userNumber <= 100) {
+//     // console.log('ok');
+//     for (let i = 1; i ** 2 <= userNumber; i++) {
+
+//         const result = i;
+//         console.log(`Number - ${i}, square - ${i ** 2}`);
+//     }
+// }
+// else {
+//     alert('Error: invalid  number, try egain...!!!');
+//     console.log('Error: invalid number, try egain...!!!');
+// }
+
+
+
+const userNumber = prompt('Enter your number, please');
 console.log(`User numaber ${userNumber}`);
 
 if (userNumber === null) {
     alert('ok, bye');
     console.log('ok, bye');
 }
-else if (!userNumber.trim() || isNaN(userNumber) || !Number.isInteger(+userNumber)) {
+else if (!userNumber.trim() || isNaN(userNumber) || !Number.isInteger(+userNumber) || 0 >= +userNumber) {
     alert('Error: invalid number, try egain...!!!');
     console.log('Error: invalid number, try egain...!!!');
 }
-else if (0 < +userNumber && +userNumber <= 100) {
-    // console.log('ok');
-    for (let i = 1; i ** 2 <= userNumber; i++) {
+else if (true) {
+
+    const maxNumber = Math.min(+userNumber, 100);
+
+    for (let i = 1; i ** 2 <= maxNumber; i++) {
 
         const result = i;
-
-
         console.log(`Number - ${i}, square - ${i ** 2}`);
+
     }
-
-
 }
-else {
-    alert('Error: invalid  number, try egain...!!!');
-    console.log('Error: invalid number, try egain...!!!');
 
-
-}
 
 
